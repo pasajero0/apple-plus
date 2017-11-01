@@ -1,0 +1,164 @@
+@import url('font/SanFrancisco.ttf');
+
+body {
+	font-family: SFNS Display;
+
+	-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300; 
+}
+a{
+	text-decoration: none;
+	color: lightblue; 
+}
+/*-------------------------------------------------------------------------------------------------------------------------МЕНЮ*/
+.search {
+	width: 100%;
+	height: 32px;
+	background-color: #222222;
+	color: white;
+	font-size: 14px;
+	text-align: right;
+	padding-right: 80px;
+}
+.search span:hover{
+	color: #afafaf;
+	cursor: pointer;
+}
+.search span i {
+	padding-right: 15px;
+	padding-left: 30px;
+}
+.search span {
+    /*vertical-align: middle;*/
+}
+.navbar {
+	background-color: #333333;
+	height: 78px;
+	padding: 0;
+}
+.navbar div {
+	width: 450px;
+}
+.navbar-item {
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	height: 100%;
+	padding-left: 15px;
+}
+.navbar-item:hover{
+	color: #afafaf;
+	cursor: pointer;
+}
+.logo img{
+	height: 65px;
+    margin-left: 100px;
+}
+/*-------------------------------------------------------------------------------------------------------------------------ОСНОВА*/
+.parallax1 {
+	display: inline-block;
+	width: 100%;
+	height: 500px;
+	color: white;
+	font-size: 25px;
+    background-image: url("../img/photoHeader.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.prllx-p-header {
+	text-align: center;
+	margin-top: 120px;
+	margin-bottom: 120px;
+	font-size: 55px;
+}
+.parallax1 div {
+	width: 430px;
+	height: 76px;
+	border: 2px solid;
+	text-align: center;
+    margin: 0 auto;
+}
+.parallax1 div:hover{
+	font-weight: 600;
+	border: 3px solid;
+	cursor: pointer;
+}
+.parallax1 div p {
+	margin-top: 16px;
+}
+.which-iphone{
+	margin-top: 5%;
+	text-align: center;
+	font-size: 28px;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.gap{
+	width: 100%;
+	height: 20px;
+}
+.block {
+	display: inline-block;
+	margin-left: 25px;
+	width: 130px;
+	height: 130px;
+	border: 1px solid;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.block img {
+	max-height: 86px;
+	margin-top: 10px;
+    margin-left: 30px;
+}
+.block p {
+	text-align: center;
+}
+.block:hover {
+	transform: scale(1.1 , 1.1);
+	transition: .3s;
+	cursor: pointer;
+}
+.parallax2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 300px;
+	color: white;
+	background-image:url("../img/параллакс 1.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+}
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.parallax2 img{
+	max-width: 80px;
+	height: 80px;
+} 
+.box .p-up{
+	font-weight: bold;
+	font-size: 50px;
+}
+.box .p-down{
+	margin-top: 30px;
+	font-size: 20px;
+}
+.scrolltest {
+	width: 100%;
+	height: 2000px;
+}

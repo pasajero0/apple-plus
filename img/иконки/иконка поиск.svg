@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>иконка поиск</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="шапка">
+      <path id="поиск" class="cls-1" d="M8.53,7.52H8l-.19-.18a4.38,4.38,0,1,0-.47.47L7.52,8v.53l3.36,3.36,1-1Zm-4,0a3,3,0,1,1,3-3A3,3,0,0,1,4.49,7.52Z"/>
+    </g>
+  </g>
+</svg>
