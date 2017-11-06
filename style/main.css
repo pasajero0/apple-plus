@@ -1,8 +1,47 @@
-@import url('font/SanFrancisco.ttf');
-
+/*ШРИФТЫ---------------------------------------------------------------------------------------------------FONTS*/
+				
+@font-face {
+	font-family: SF Pro Display Black;
+	src: url("../font/SF-Pro-Display-Black.otf");
+}
+@font-face {
+	font-family: SF Pro Display Light;
+	src: url("../font/SF-Pro-Display-Light.otf");
+}
+@font-face {
+	font-family: SF Pro Display Medium;
+	src: url("../font/SF-Pro-Display-Medium.otf");
+}
+@font-face {
+	font-family: SF Pro Display Regular;
+	src: url("../font/SF-Pro-Display-Regular.otf");
+}
+@font-face {
+	font-family: SF Pro Display Semibold;
+	src: url("../font/SF-Pro-Display-Semibold.otf");
+}
+@font-face {
+	font-family: SF Pro Display Thin;
+	src: url("../font/SF-Pro-Display-Thin.otf");
+}
+@font-face {
+	font-family: SF Pro Text Bold;
+	src: url("../font/SF-Pro-Text-Bold.otf");
+}
+@font-face {
+	font-family: SF Pro Text Light;
+	src: url("../font/SF-Pro-Text-Light.otf");
+}
+@font-face {
+	font-family: SF Pro Text Regular;
+	src: url("../font/SF-Pro-Text-Regular.otf");
+}
+@font-face {
+	font-family: SF Pro Text Semibold;
+	src: url("../font/SF-Pro-Text-Semibold.otf");
+}	
+/*-------------------------------------------------------------------------------------------------------------*/
 body {
-	font-family: SFNS Display;
-
 	-webkit-font-smoothing: antialiased;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -11,6 +50,10 @@ h1, h2, h3, h4, h5, h6 {
 a{
 	text-decoration: none;
 	color: lightblue; 
+}
+p {
+	font-family: SF Pro Text Regular;
+	font-size: 16px;
 }
 /*-------------------------------------------------------------------------------------------------------------------------МЕНЮ*/
 .search {
@@ -21,6 +64,7 @@ a{
 	font-size: 14px;
 	text-align: right;
 	padding-right: 80px;
+	font-family: SF Pro Text Semibold;
 }
 .search span:hover{
 	color: #afafaf;
@@ -47,6 +91,7 @@ a{
 	font-weight: 600;
 	height: 100%;
 	padding-left: 15px;
+	font-family: SF Pro Display Semibold;
 }
 .navbar-item:hover{
 	color: #afafaf;
@@ -68,6 +113,7 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: SF Pro Text Regular;
 }
 .prllx-p-header {
 	text-align: center;
@@ -79,21 +125,25 @@ a{
 	width: 430px;
 	height: 76px;
 	border: 2px solid;
-	text-align: center;
     margin: 0 auto;
 }
 .parallax1 div:hover{
 	font-weight: 600;
 	border: 3px solid;
 	cursor: pointer;
+	font-family: SF Pro Text Bold;
 }
 .parallax1 div p {
 	margin-top: 16px;
+	font-size: 25px;
+	text-align: center;
+	font-family: SF Pro Text Regular;
 }
 .block-title{
 	margin-top: 5%;
 	text-align: center;
-	font-size: 28px;
+	font-size: 20px;
+	font-family: SF Pro Display Semibold;
 }
 .gap{
 	width: 100%;
@@ -113,6 +163,7 @@ a{
 	border: 1px solid;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: .3s;
 }
 .block img {
 	max-height: 86px;
@@ -120,6 +171,8 @@ a{
     margin-left: 32.5px;
 }
 .block p {
+	font-family: SF Pro Text Light;
+	font-size: 14px;
 	text-align: center;
 }
 .block:hover {
@@ -130,13 +183,21 @@ a{
 @media (max-width: 1199px) {
 	.container {
     display: grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 280px 280px;
     justify-content: center;
     grid-gap: 15px;
 	}
 	.block {
     margin-left: 0px;
+    width: 260px;
+	height: 260px;
 	}
+	.block img {
+	max-height: 172px;
+	margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
 }
 .parallax2 {
 	display: flex;
@@ -165,12 +226,13 @@ a{
 	height: 80px;
 } 
 .box .p-up{
-	font-weight: bold;
-	font-size: 50px;
+	font-family: SF Pro Display Black;
+	font-size: 30px;
 }
 .box .p-down{
 	margin-top: 30px;
 	font-size: 20px;
+	font-family: SF Pro Display Semibold;
 }
 .table-block{
 	width: 98%;
@@ -178,16 +240,21 @@ a{
 	background-color: #f4f4f4;
 	color: #222222;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+	font-family: SF Pro Display Regular;
+	text-align: center;
 }
 .table-head{
 	background-color: #498bc3;
 	color: white;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 12px;
+	font-family: SF Pro Display Semibold;
 }
 .table-row-head{
-	font-weight: 300;
-	font-size: 14px;
+	text-align: left;
+	font-family: SF Pro Text Semibold;
+	font-size: 12px;
 }
 .parallax3 {
 	display: flex;
@@ -211,10 +278,11 @@ a{
 	height: 150px;
 } 
 .p-p-up{
-	font-weight: bold;
-	font-size: 30px;
+	font-family: SF Pro Display Medium;
+	font-size: 20px;
 }
 .p-p-down{
+	font-family: SF Pro Display Thin;
 	font-size: 14px;
 	text-align: center;
 }
@@ -237,13 +305,13 @@ a{
 	width: 4%;
 }
 .p-head {
-	font-weight: 600;
+	font-family: SF Pro Text Semibold;
+	font-size: 16px;
 }
 .iphone-text{ 
 	width:600px;
 	height:360px;
 	color: #222222;
-	 /* border: 1px solid;*/
 }
 .line{
 	background-color: #498bc3;
@@ -264,21 +332,74 @@ a{
 	height: 400px;
 }
 .map{
-	width: 300px;
-	height: 350px;
-	background-color: lightblue;
+	width: 500px;
+	height: 344px;
 }
 .view{
-	width: 300px;
-	height: 350px;
-	background-color: tomato;
+	width: 500px;
+	height: 344px;
 }
 .form {
+	display: flex;
+	justify-content: center;
 	margin-top: 4%;
 	margin: 0 auto;
 	width: 60%;
 	height: 500px;
-	background-color: lightgray;
+}
+.form form div span{
+	color: #555555;
+}
+.input-area{
+	border: none;
+	color: #555555;
+	background-color: #efefef;
+	padding-left: 10px;
+	margin: 15px;
+	font-size: 14px;
+	font-family: SF Pro Display Thin;
+}
+.input-area:focus{
+	color: #222222;
+	border: 1px solid #498bc3;
+	font-family: SF Pro Display Regular;
+}
+.input-name{
+	width: 300px;
+	height: 40px;
+}
+.input-telephone{
+	width: 300px;
+	height: 40px;
+}
+.input-mail{
+	width: 635px;
+	height: 40px;
+}
+.input-message{
+	width: 635px;
+	height: 160px;
+	resize: none;
+}
+.input-check{
+	width: 100px;
+	height: 40px;
+}
+.button{
+	width: 300px;
+	height: 40px;
+	border: 1px solid #498bc3;
+	background-color: white;
+	font-size: 15px;
+	font-family: SF Pro Display Light;
+}
+.button:hover{
+	border: 2px solid #498bc3;
+	font-family: SF Pro Display Regular;
+}
+.check-button{
+	display: flex;
+    justify-content: flex-end;
 }
 footer {
 	margin-top: 4%;

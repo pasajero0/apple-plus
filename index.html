@@ -10,7 +10,8 @@
 <body>
 <div class="search">
 	<div>
-		<span><i class="fa fa-phone" aria-hidden="true"></i> +7(495) 729-60-41 <i class="fa fa-search" aria-hidden="true"></i></span>
+		<span><i class="fa fa-phone" aria-hidden="true"></i> +7(495) 729-60-41</span> 
+		<span><i class="fa fa-search" aria-hidden="true"></i></span>
 	</div>
 </div>
 <div class="navbar">
@@ -546,19 +547,40 @@
 <div class="gap"></div>
 <div class="how-to-get">
 	<p class="block-title">Как добраться</p>
-	<p>Наш офис находится по адресу: г. Москва, м. Братиславская. ул. Братиславская, д.14<br> Вход между 9 и 10 подъездами</p>
-	<p>Время работы<br>Будни: с 10:00 до 21:00,<br> Сб,Вс: с 11:00 до 20:00</p>
-	<p>Телефон:<br>+7 (495) 729-60-41</p>
+	<p>Наш офис находится по адресу: г. Москва, <span class="p-head">м. Братиславская</span>, ул. Братиславская, д. 14<br> Вход между 9 и 10 подъездами</p>
+	<p><span class="p-head">Время работы</span><br>Будни: с 10:00 до 21:00,<br> Сб,Вс: с 11:00 до 20:00</p>
+	<p><span class="p-head">Телефон:</span><br>+7 (495) 729-60-41;</p>
 </div>
 <div class="gap"></div>
 <div class="map-container">
-	<div class="map col-lg-3"></div>
+	<div class="map ">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.7243491479408!2d37.75431441605986!3d55.65900320668969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab4112968519d%3A0xbf82032ffc5d1c14!2z0JHRgNCw0YLQuNGB0LvQsNCy0YHQutCw0Y8g0YPQuy4sIDE0LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA5NDUx!5e0!3m2!1sru!2sua!4v1510001022176" width="500" height="344" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
 	<div class="vertical-gap"></div>
-	<div class="view col-lg-3"></div>
+	<div class="view ">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510001324643!6m8!1m7!1sK_36BZDVgUW45SmJJndLHg!2m2!1d55.65876148447846!2d37.75685569458346!3f235.02!4f-7.3700000000000045!5f0.5970117501821992" width="500" height="344" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
 </div>
 <p class="block-title">Свяжитесь с нами, заполнив форму ниже</p>
 <div class="gap"></div>
-<div class="form"></div>
+<div class="form">
+	<form action="" method="POST">
+		<div>
+			<span><input type="text" name="name" placeholder="Имя" class="input-name input-area"></span>
+			<span><input type="text" name="telephone" placeholder="Телефон" class="input-telephone input-area"></span>
+		</div>
+		<div>
+			<input type="text" name="e-mail" placeholder="E-mail" class="input-mail input-area">
+		</div>
+		<div>
+			<textarea name="message" placeholder="Сообщение" class="input-message input-area"></textarea>
+		</div>
+		<div class="check-button">
+			<span> 8 + 16 = <input type="text" class="input-check input-area"></span>
+			<span><input type="submit" name="submit" class="button input-area" value="ОТПРАВИТЬ"></span>
+		</div>
+	</form>
+</div>
 <div class="gap"></div>
 <footer></footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
