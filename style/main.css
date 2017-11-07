@@ -294,8 +294,7 @@ p {
 	align-items: center;
 }
 .iphone-img{
-	width: 350px;
-	  /*border: 1px solid;*/
+	width: 270px;
 }
 .iphone-img img{
 	width: inherit;
@@ -312,6 +311,17 @@ p {
 	width:600px;
 	height:360px;
 	color: #222222;
+	text-align: justify; 
+}
+@media (max-width: 1490px) {
+.iphone-text p {
+    	font-size: 14px;
+    }
+}
+@media (max-width: 1199px) {
+.iphone-text p {
+    	font-size: 12px;
+    }
 }
 .line{
 	background-color: #498bc3;
@@ -402,8 +412,93 @@ p {
     justify-content: flex-end;
 }
 footer {
+	width: 100%;
+}
+.footer-block{
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: baseline;
 	margin-top: 4%;
-	background-color: #222222;
+	background-color: #333333;
 	width: 100%;
 	height: 294px;
+}
+.footer-menu{
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+/*.footer-menu-item{
+	display: inline-flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}*/
+.footer-menu-item-header{
+	margin-bottom: 2px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+	font-size: 16px;
+	font-family: SF Pro Display Regular;
+	color: #498bc3;
+	cursor: pointer;
+}
+.footer-menu-item div {
+	width: 100%;
+	height: 2px;
+	background-color: #333333;
+	transition: 2s;
+	margin-bottom: 5px;
+}
+.footer-menu-item:hover div {
+	background-color: #498bc3;
+	transition: .3s;
+}
+.footer-menu-item ul {
+	font-family: SF Pro Display Thin;
+	font-size: 14px;
+	list-style: none;
+	color: #ffffff;
+	padding: 15px;
+}
+.footer-menu-item ul li:hover {
+		color: #afafaf;
+		cursor: pointer;
+}
+.footer-info{
+	padding: 30px;
+}
+.footer-info p {
+	font-family: SF Pro Display Regular;
+	font-size: 16px;
+	color: white;
+}
+.footer-info i{
+	color: #498bc3;
+	font-size: 20px;
+	margin-right: 10px;
+} 
+.footer-logo{
+	width: 200px;
+	height: 66px;
+	margin-bottom: 30px;
+}
+.end{
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+	overflow: hidden;
+	width: 100%;
+	height: 32px;
+	background-color: #222222;
+}
+.end p {
+	margin-top: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: #dddddd;
+	font-size: 12px;
+	font-family: SF Pro Display Thin;
 }
