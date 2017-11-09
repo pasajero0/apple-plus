@@ -47,9 +47,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300; 
 }
-a{
+a {
 	text-decoration: none;
 	color: lightblue; 
+}
+a:hover {
+	text-decoration: none;
+    color: white;
 }
 p {
 	font-family: SF Pro Text Regular;
@@ -57,6 +61,9 @@ p {
 }
 /*-------------------------------------------------------------------------------------------------------------------------МЕНЮ*/
 .search {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-end;
 	width: 100%;
 	height: 32px;
 	background-color: #222222;
@@ -66,16 +73,16 @@ p {
 	padding-right: 80px;
 	font-family: SF Pro Text Semibold;
 }
-.search span:hover{
+.search div {
+    margin-top: 5px;
+}
+.search div:hover{
 	color: #afafaf;
 	cursor: pointer;
 }
-.search span i {
+.search div i {
 	padding-right: 15px;
 	padding-left: 30px;
-}
-.search span {
-    /*vertical-align: middle;*/
 }
 .navbar {
 	background-color: #333333;
@@ -83,19 +90,70 @@ p {
 	padding: 0;
 }
 .navbar div {
+	text-align: center;
 	width: 450px;
 }
+.navbar-item-block{
+	display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-right: 4%;
+}
+.dropmenu {
+	position: absolute;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	border-radius: 3px;
+	top: -999em;
+	left: -500px;
+	opacity: 0;
+	left: -470px;
+	color: black;
+}
+.navbar-item:hover .dropmenu{
+	background-color: white;
+	top: 78px;
+	opacity: 1;
+    visibility: visible;
+    width: 600px;
+}
+.device{  
+    max-width: 160px;
+    max-height: 218px;
+    transition: all .1s ease-in-out;
+    border-right: 1px solid lightgray;
+}
+.device img {
+	left: 0;
+	width: 135px;
+    height: 120px;
+    margin-top: 30px;
+}
+.device:hover{  
+    opacity: 0.6;
+    transition: .3s;
+}
 .navbar-item {
+	position: relative;
 	color: white;
 	font-size: 16px;
 	font-weight: 600;
-	height: 100%;
-	padding-left: 15px;
+	padding-top: 30px;
+    height: 78px;
 	font-family: SF Pro Display Semibold;
 }
 .navbar-item:hover{
 	color: #afafaf;
 	cursor: pointer;
+}
+.navbar-item a {
+	text-decoration: none;
+	color: white; 
+}
+.navbar-item:hover a{
+	text-decoration: none;
+    color: #afafaf;
 }
 .logo img{
 	height: 65px;
@@ -418,7 +476,6 @@ footer {
 	display: inline-flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	align-items: baseline;
 	margin-top: 4%;
 	background-color: #333333;
 	width: 100%;
@@ -426,8 +483,7 @@ footer {
 }
 .footer-menu{
 	display: inline-flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
+	padding: 30px;
 }
 /*.footer-menu-item{
 	display: inline-flex;
@@ -436,8 +492,8 @@ footer {
 }*/
 .footer-menu-item-header{
 	margin-bottom: 2px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 5vw;
+	padding-right: 5vw;
 	text-align: center;
 	font-size: 16px;
 	font-family: SF Pro Display Regular;
@@ -448,7 +504,7 @@ footer {
 	width: 100%;
 	height: 2px;
 	background-color: #333333;
-	transition: 2s;
+	transition: 1s;
 	margin-bottom: 5px;
 }
 .footer-menu-item:hover div {
@@ -461,6 +517,7 @@ footer {
 	list-style: none;
 	color: #ffffff;
 	padding: 15px;
+	padding-left: 4vw;
 }
 .footer-menu-item ul li:hover {
 		color: #afafaf;
