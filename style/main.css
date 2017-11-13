@@ -248,7 +248,7 @@ p {
 }
 .parallax1 div:hover p {
 	/*font-family: SF Pro Text Bold;*/
-	transform: scale(1.2);
+	transform: scale(1.19);
 	transition: .5s;
 	margin-bottom: 0;
 }
