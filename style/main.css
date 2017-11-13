@@ -239,7 +239,7 @@ p {
 	transform: scale(1.02);
 	transition: .3s;
 }
-.parallax1 p {
+.parallax1 div p {
 	padding: 17px;
 	font-size: 25px;
 	text-align: center;
@@ -248,7 +248,7 @@ p {
 }
 .parallax1 div:hover p {
 	/*font-family: SF Pro Text Bold;*/
-	transform: scale(1.19);
+	transform: scale(1.20);
 	transition: .5s;
 	margin-bottom: 0;
 }
