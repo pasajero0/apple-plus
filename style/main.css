@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
 	text-decoration: none;
-	color: lightblue; 
+	color: white; 
 }
 a:hover {
 	text-decoration: none;
@@ -128,6 +128,7 @@ p {
 .search div i {
 	padding-right: 15px;
 	padding-left: 30px;
+	font-size: 17px;
 }
 .search-gap {
 	width: 80px; 
@@ -230,18 +231,26 @@ p {
 	height: 76px;
 	border: 2px solid;
     margin: 0 auto;
+    transition: .3s;
 }
 .parallax1 div:hover{
-	font-weight: 600;
-	border: 3px solid;
+	border: 2px solid;
 	cursor: pointer;
-	font-family: SF Pro Text Bold;
+	transform: scale(1.02);
+	transition: .3s;
 }
-.parallax1 div p {
-	margin-top: 16px;
+.parallax1 p {
+	padding: 17px;
 	font-size: 25px;
 	text-align: center;
 	font-family: SF Pro Text Regular;
+	transition: .5s;
+}
+.parallax1 div:hover p {
+	/*font-family: SF Pro Text Bold;*/
+	transform: scale(1.2);
+	transition: .5s;
+	margin-bottom: 0;
 }
 .block-title{
 	margin-top: 5%;
@@ -381,6 +390,9 @@ p {
 	max-width: 150px;
 	height: 150px;
 } 
+.scale-img {
+	transform: scale(1.27);
+}
 .p-p-up{
 	font-family: SF Pro Display Medium;
 	font-size: 20px;
