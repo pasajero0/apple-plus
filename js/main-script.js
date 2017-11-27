@@ -35,12 +35,12 @@ const animateNumb = () => {
 		);
 };
 
+var numberAnimationStop = false;
+
 $(window).scroll(function(){
 	const st = $(this).scrollTop();
-	console.log(st);
-	if (st >= 270 && st <= 300){
+	if (st >= 270 && !numberAnimationStop){
 		animateNumb();
+		numberAnimationStop = true;
 	}
 });
-
-

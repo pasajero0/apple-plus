@@ -60,9 +60,6 @@ p {
 	font-size: 16px;
 }
 
-/*.bounceIn {
-  animation-name: bounceIn;
-}*/
 /*-------------------------------------------------------------------------------------------------------------------------МЕНЮ*/
 .search {
 	display: inline-flex;
@@ -489,7 +486,7 @@ iframe {
 		width: 100%;
 		height: 700px;
 	}
-	.vertical-gap{
+	.map-container .vertical-gap{
 		display: none;
 	}
 	.map{
