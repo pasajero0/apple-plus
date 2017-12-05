@@ -328,8 +328,8 @@ p {
 	width: 100%;
 	height: 300px;
 	color: white;
-	background-image:url("../img/параллакс 1.jpg");
 	box-shadow: inset 0px 300px 0px rgba(0, 32, 53, 0.4);
+	background-image:url("../img/параллакс 1.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -385,8 +385,8 @@ p {
 	width: 100%;
 	height: 300px;
 	color: white;
-	background-image:url("../img/параллакс 2.jpg");
 	box-shadow: inset 0px 300px 0px rgba(6, 27, 40, 0.4);
+	background-image:url("../img/параллакс 2.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
