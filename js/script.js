@@ -6,6 +6,30 @@ $('.close-btn').on('click', () => {
     $('#searchplace').css('display', 'none');
 });
 
+$('#mobNavbar').on('click', () => {
+	if ($('#mobNavbar').hasClass('pushed')) {
+		$("#mobNavbarDropmenu").animate({
+			width: 'hide'
+		},{
+			duration: 300, 
+			specialEasing: { 
+				width: 'swing'
+			}
+		});
+		$('#mobNavbar').removeClass('pushed');
+	}else{
+		$("#mobNavbarDropmenu").animate({
+		    width: 'show'
+		},{
+		    duration: 300, 
+		    specialEasing: {
+		      	width: 'swing'
+		    }
+		});
+		$('#mobNavbar').addClass('pushed');
+	}
+});
+
 const animateNumb = () => {
 		$('#animNumb3')
 		.prop('number', 0)

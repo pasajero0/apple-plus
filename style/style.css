@@ -59,7 +59,6 @@ p {
 	font-family: SF Pro Text Regular;
 	font-size: 16px;
 }
-
 /*-------------------------------------------------------------------------------------------------------------------------МЕНЮ*/
 .search {
 	display: inline-flex;
@@ -75,19 +74,19 @@ p {
 }
 #searchplace {
 	display: none;
-	flex-direction: row;
-	justify-content: flex-end;
 	position: fixed;
-	width: 100%;
-	height: 32px;
-	background-color: #222222;
-	color: white;
-	font-size: 14px;
 	text-align: center;
 	margin: 0 auto;
-	font-family: SF Pro Text Semibold;
 	transition: .3s;
+	z-index: 9999999;
 }
+/*/////////////////////////////////////////////////////////////*/
+		@media (max-width: 1000px) {
+			.search {
+				height: 50px;
+			}	
+		}
+/*/////////////////////////////////////////////////////////////*/
 #searchplace form{
 	margin-top: 4px;
 	border-radius: 10px;
@@ -100,6 +99,7 @@ p {
 }
 #searchplace form input {
 	border: none;
+	color: white;
     background-color: #222222;
     width: 20vw;
 }
@@ -122,7 +122,7 @@ p {
 	display: inline;
     margin-top: 5px;
 }
-.search div:hover{
+.search div img:hover{
 	color: #afafaf;
 	cursor: pointer;
 }
@@ -138,15 +138,93 @@ p {
 .search div img:hover{
 	opacity: .6;
 }
-.search-gap {
-	width: 80px; 
+@media (min-width: 1000px) {
+	.search-gap {
+		width: 80px; 
+	}
+	.navbar {
+		position: static;
+		background-color: #333333;
+		height: 78px;
+		padding: 0;
+	}
+	.navbar-mobile {
+		display: none;
+	}
 }
-.navbar {
-	position: static;
-	background-color: #333333;
-	height: 78px;
-	padding: 0;
+/*/////////////////////////////////////////////////////////////*/
+		@media (max-width: 1000px) {
+			#searchplace form{
+				margin-top: 15px;
+			}
+			#searchplace form input {
+			    width: 45vw;
+			}
+			.search div {
+			    margin-top: 15px;
+			}
+			.search-gap {
+				display: none; 
+			}
+			.navbar{
+				display: none;
+			}
+			.navbar-mobile {
+				position: relative;
+				display: flex;
+			    justify-content: space-between;
+				position: static;
+				background-color: #333333;
+				/*background-color: tomato;*/
+				width: 100%;
+				height: 78px;
+				padding: 0;
+			}
+			.navbar-mobile div{
+				margin-right: 15px;
+			    margin-top: 20px;
+			}
+			.navbar-mobile div i{
+				cursor: pointer;
+				padding-left: 5px;
+			    padding-right: 5px;
+			    border-radius: 5px;
+				font-size: 40px;
+				color: white;
+			}
+		}
+#mobNavbarDropmenu{
+	display: none;
+	position: absolute;
+	top: 107px;
+	right: -15px;
+	background-color: white;
+	border-radius: 2px;
+	overflow: hidden;
 }
+#mobNavbarDropmenu div {
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 0 auto;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	font-family: SF Pro Display Semibold;
+}
+#mobNavbarDropmenu div:hover {
+	background-color: lightgray;
+}
+#mobNavbarDropmenu div a {
+	color: #333333;
+}
+.pushed{
+	color: #007cad !important;
+	box-shadow: inset 0 0 22px rgba(0,0,0,0.2),inset 0 3px 0 rgba(0,0,0,0.1), inset 0 0 22px rgba(0,0,0,0.1);
+}
+/*/////////////////////////////////////////////////////////////*/
 .navbar div {
 	text-align: center;
 	width: 450px;
@@ -210,10 +288,22 @@ p {
 	text-decoration: none;
     color: #afafaf;
 }
-.logo img{
-	height: 65px;
-    margin-left: 100px;
+@media (min-width: 1000px) {
+	.logo img{
+		height: 65px;
+	    margin-left: 100px;
+	}
 }
+/*/////////////////////////////////////////////////////////////*/
+		@media (max-width: 1000px) {
+			.logo img{
+				height: 65px;
+			    margin-left: 15px;
+			    margin-top: 5px;
+			}
+		}
+/*/////////////////////////////////////////////////////////////*/
+
 /*-------------------------------------------------------------------------------------------------------------------------ОСНОВА*/
 .parallax1 {
 	display: inline-block;
@@ -228,19 +318,38 @@ p {
     background-size: cover;
     font-family: SF Pro Text Regular;
 }
-.prllx-p-header {
-	text-align: center;
-	margin-top: 120px;
-	margin-bottom: 120px;
-	font-size: 55px;
+@media (min-width: 1000px) {
+	.prllx-p-header {
+		text-align: center;
+		margin-top: 120px;
+		margin-bottom: 120px;
+		font-size: 55px;
+	}
+	.parallax1 div {
+		width: 430px;
+		height: 76px;
+		border: 2px solid;
+	    margin: 0 auto;
+	    transition: .3s;
+	}
 }
-.parallax1 div {
-	width: 430px;
-	height: 76px;
-	border: 2px solid;
-    margin: 0 auto;
-    transition: .3s;
-}
+/*/////////////////////////////////////////////////////////////*/
+		@media (max-width: 1000px) {
+			.prllx-p-header {
+				text-align: center;
+				margin-top: 120px;
+				margin-bottom: 120px;
+				font-size: 37px;
+			}
+			.parallax1 div {
+				width: 300px;
+				height: 76px;
+				border: 2px solid;
+			    margin: 0 auto;
+			    transition: .3s;
+			}
+		}
+/*/////////////////////////////////////////////////////////////*/
 .parallax1 div:hover{
 	border: 2px solid;
 	cursor: pointer;
@@ -260,6 +369,13 @@ p {
 	transition: .3s;
 	margin-bottom: 0;
 }
+/*/////////////////////////////////////////////////////////////*/
+		@media (max-width: 1000px) {
+			.parallax1 div:hover p {
+				transform: scale(1.1);
+			}
+		}
+/*/////////////////////////////////////////////////////////////*/
 .block-title{
 	margin-top: 5%;
 	text-align: center;
@@ -318,8 +434,29 @@ p {
 	margin-top: 20px;
     margin-left: 70px;
     margin-bottom: 10px;
+	}
 }
-}
+/*/////////////////////////////////////////////////////////////*/
+		@media (max-width: 650px) {
+			.container {
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+			}
+			.block {
+		    margin-left: 0px;
+		    width: 260px;
+			height: 260px;
+			}
+			.block img {
+			max-height: 172px;
+			margin-top: 20px;
+		    margin-left: 70px;
+		    margin-bottom: 10px;
+			}
+		}
+/*/////////////////////////////////////////////////////////////*/
 .parallax2 {
 	display: flex;
 	flex-direction: row;
@@ -355,6 +492,25 @@ p {
 	font-size: 20px;
 	font-family: SF Pro Display Semibold;
 }
+/*/////////////////////////////////////////////////////////////*/
+		@media (max-width: 700px) {
+			.parallax2 {
+				height: 200px;
+			} 
+			.parallax2 img{
+				max-width: 40px;
+				height: 40px;
+			} 
+			.box .p-up{
+				font-size: 20px;
+			}
+			.box .p-down{
+				text-align: center;
+				margin-top: 30px;
+				font-size: 12px;
+			}
+		}
+/*/////////////////////////////////////////////////////////////*/
 .table-block{
 	width: 98%;
 	margin: 0 auto;
@@ -364,6 +520,7 @@ p {
 	font-size: 12px;
 	font-family: SF Pro Display Regular;
 	text-align: center;
+	box-sizing: border-box;
 }
 .table-head{
 	background-color: #498bc3;
@@ -397,7 +554,7 @@ p {
 	margin-top: 30px;
 	max-width: 150px;
 	height: 150px;
-} 
+}
 .scale-img {
 	transform: scale(1.27);
 }
@@ -405,11 +562,33 @@ p {
 	font-family: SF Pro Display Medium;
 	font-size: 20px;
 }
+/*/////////////////////////////////////////////////////////////*/
+		@media (max-width: 650px) {
+			.parallax3 {
+				height: 200px;
+			}
+			.parallax3 img{
+				margin-top: 30px;
+				max-width: 75px;
+				height: 75px;
+			}
+			.p-p-up{
+				font-size: 12px;
+			}
+		}
+/*/////////////////////////////////////////////////////////////*/
 .p-p-down{
 	font-family: SF Pro Display Thin;
 	font-size: 14px;
 	text-align: center;
 }
+/*/////////////////////////////////////////////////////////////*/
+		@media (max-width: 750px) {
+			.p-p-down{
+				display: none;
+			}
+		}
+/*/////////////////////////////////////////////////////////////*/ 
 .container-serv-description{
 	margin-top: 4%;
 	display: flex;
@@ -427,6 +606,16 @@ p {
 	height: 500px;
 	width: 4%;
 }
+/*/////////////////////////////////////////////////////////////*/
+		@media (max-width: 670px) {
+			.iphone-img{
+				display: none;
+			}
+			.vertical-gap{
+				display: none;
+			}
+		}
+/*/////////////////////////////////////////////////////////////*/ 
 .p-head {
 	font-family: SF Pro Text Semibold;
 	font-size: 16px;
@@ -437,6 +626,36 @@ p {
 	color: #222222;
 	text-align: justify; 
 }
+/*/////////////////////////////////////////////////////////////*/
+				@media (max-width: 650px) {
+					.iphone-text{ 
+						width:600px;
+						height:360px;
+						color: #222222;
+						text-align: justify;
+						margin-bottom: 20px; 
+					}
+				}
+				@media (max-width: 440px) {
+					.iphone-text{ 
+						width:600px;
+						height:360px;
+						color: #222222;
+						text-align: justify;
+						margin-bottom: 80px; 
+					}
+				}
+				@media (max-width: 370px) {
+					.iphone-text{ 
+						width:600px;
+						height:360px;
+						color: #222222;
+						text-align: justify;
+						margin-bottom: 140px; 
+					}
+				}
+/*/////////////////////////////////////////////////////////////*/
+
 @media (max-width: 1490px) {
 .iphone-text p {
     	font-size: 14px;
@@ -565,6 +784,43 @@ iframe {
 	display: flex;
     justify-content: flex-end;
 }
+/*/////////////////////////////////////////////////////////////*/
+				@media (max-width: 680px) {
+					.form {
+						height: 600px;
+					}
+					.form form div {
+						margin: 0 auto;
+						width: 330px;
+					}
+					.input-mail {
+					    width: 300px;
+					    height: 40px;
+					}
+					.input-message{
+						width: 300px;
+						height: 160px;
+						resize: none;
+					}
+					.check-button{
+						display: flex;
+					    flex-direction: column;
+					    align-items: center;
+					    justify-content: center;
+
+					}
+				}
+				@media (max-width: 350px) {
+					.form {
+						display: block;
+					    justify-content: none;
+					    margin-top: 0;
+					    margin: 0;
+					    width: 0;
+					    height: 600px;
+					}
+				}
+/*/////////////////////////////////////////////////////////////*/				
 footer {
 	width: 100%;
 }
@@ -581,11 +837,6 @@ footer {
 	display: inline-flex;
 	padding: 30px;
 }
-/*.footer-menu-item{
-	display: inline-flex;
-	flex-flow: column nowrap;
-	justify-content: flex-start;
-}*/
 .footer-menu-item-header{
 	margin-bottom: 2px;
 	padding-left: 3vw;
@@ -655,3 +906,20 @@ footer {
 	font-size: 12px;
 	font-family: SF Pro Display Thin;
 }
+/*/////////////////////////////////////////////////////////////*/
+				@media (max-width: 840px) {
+					.footer-menu{
+						display: none;
+					}
+				}
+				@media (max-width: 500px) {
+					.footer-info{
+						width: 250px;
+						margin: 0 auto;
+					}
+					.end p {
+						padding-left: 15px;
+						padding-right: 15px;
+					}
+				}
+/*/////////////////////////////////////////////////////////////*/
